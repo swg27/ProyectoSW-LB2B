@@ -51,7 +51,7 @@
             <table border="1">
                 <tr>
 
-            <form id='fpreguntas' name='fpreguntas' action='../../php/InsertarPregunta.php' method="Post" enctype="multipart/form-data">
+            <form id='fpreguntas' name='fpreguntas' action='../../php/InsertarPreguntaConFoto.php' method="Post" enctype="multipart/form-data">
                 <td>
                 Email*: &nbsp;<input type="text" size="50" id="e-mail" name="email" placeholder="p.e. alumno@ikasle.ehu.eus" pattern="([a-zA-Z]{1,})+([0-9]{3})+(@ikasle\.ehu\.)+(eus|es)$" required/></br>
                 Dificultad de la pregunta*: &nbsp;<input type="text" size="50" id="lvl" name="level" placeholder="p.e. 4:" pattern="[1-5]{1}" required></br>
@@ -61,7 +61,8 @@
                 Respuesta incorrecta*: &nbsp;<input type="text" size="50" id="noAns1" name="incorrectAns1" placeholder="p.e. Benoît Mandelbrot" required></br>
                 Respuesta incorrecta*: &nbsp;<input type="text" size="50" id="noAns2" name="incorrectAns2" placeholder="p.e. Homer Simpson" required></br>
                 Respuesta incorrecta*: &nbsp;<input type="text" size="50" id="noAns3" name="incorrectAns3" placeholder="p.e. Thomas Edison" required></br></br>
-                <input type="submit" id="submiter" name="submiter" value="Enviar" align="center"></br></br>
+                <input type="submit" id="submiter" name="submiter" value="Enviar" align="center">&nbsp;
+                    <input type=reset value="Clear Form"></br></br>
                 </td>
                 <td>
                 <div align="center">

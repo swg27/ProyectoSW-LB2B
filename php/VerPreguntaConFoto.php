@@ -27,6 +27,7 @@ echo '<table border=1>
         <th>Respuesta incorrecta 2</th> 
         <th>Respuesta incorrecta 3</th>
         <th>email</th>
+        <th>Imagen relacionada</th>
         </tr>';
 
 while($row = mysqli_fetch_array($preguntas)){
@@ -41,6 +42,9 @@ while($row = mysqli_fetch_array($preguntas)){
     <td align="center">'.$row['no_respuesta_2'].'</td>
     <td align="center">'.$row['no_respuesta_3'].'</td>
     <td align="center">'.$row['email'].'</td>
+    <td align="center">'
+    .'<img src="data:image/type;base64,'.base64_encode( $row['image']).'"/>'.
+    '</td>
     </tr>';
 }
     echo '</table>';
